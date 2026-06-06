@@ -99,16 +99,16 @@ export default function Navbar() {
           {/* Mobile Menu */}
           <div
             className={`md:hidden mt-2 overflow-hidden transition-all duration-300 ${
-              open ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
-            }`}
+            open ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+          }`}
           >
-            <div className="glass liquid-glass glass-hover rounded-3xl p-8">
+            <div className="glass liquid-glass glass-hover rounded-3xl p-8 flex flex-col gap-2">
               {links.map(({ label, href }) => (
                 <a
                   key={href}
                   href={href}
                   onClick={() => setOpen(false)}
-                  className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
+                  className={`block px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                     active === href
                       ? 'bg-black/8 text-[#000] border border-black/12'
                       : 'text-[#666] hover:text-[#333] hover:bg-black/4'
@@ -117,7 +117,7 @@ export default function Navbar() {
                   {label}
                 </a>
               ))}
-            </div>
+            </div>  
           </div>
         </div>
       </header>
