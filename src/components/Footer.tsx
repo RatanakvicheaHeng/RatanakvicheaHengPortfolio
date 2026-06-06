@@ -73,9 +73,6 @@ export default function Footer() {
           <p className="text-xs text-[#aaa]">
             &copy; {new Date().getFullYear()} Ratanakvichea Heng. All rights reserved.
           </p>
-          <p className="text-xs text-[#bbb] flex items-center gap-1.5">
-            Built with <Heart size={11} className="text-rose-400 fill-rose-400" /> using React, Tailwind &amp; Apple Liquid Glass
-          </p>
         </div>
       </div>
     </footer>
